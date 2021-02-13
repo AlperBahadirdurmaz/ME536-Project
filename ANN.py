@@ -105,7 +105,9 @@ model.fit(x=train_batches,validation_data=valid_batches, epochs=10, verbose=2)
 # Predict using fine-tuned VGG16 model
 predictions= model.predict(x=test_batches, verbose=1)
 
-
+import os.path
+if os.path.isfile('C:\\Users\\alper\\Desktop\\models\\fruitCNN.h1') is false:
+    model.save('C:\\Users\\alper\\Desktop\\models\\fruitCNN.h1')
 
 
 
